@@ -5,9 +5,17 @@ class Pet
     private $_name;
     private $_color;
 
+    //Default Constructor
+
+    function __construct()
+    {
+        $this->_name = "unknown";
+        $this->_color = "?";
+    }
+
     function eat()
     {
-        echo "Pet is eating<br>";
+        echo $this->_name . " is eating.<br>";
     }
 
     function talk()
